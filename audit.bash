@@ -4,7 +4,8 @@ set -euo pipefail
 # array holding all directories where projects should be located
 PROJDIRS=( "$HOME/Documents/programming" "$HOME/Documents/sysadmin" )
 
-PUBLISHED=( nanopass )
+PUBLISHED=( nanopass gateway-page typst-fitch )
+# TODO upcomping: hss, kiss-tools, compiler-tools
 
 # array holding location of all git directories (after `get_gitdirs`)
 declare -a GITDIRS
