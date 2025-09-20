@@ -17,6 +17,8 @@ main() {
   git_status
   # TODO check on the projects I maintain
   # TODO typos
+  # TODO old-compiled typst/latex files
+  # TODO hanging swap files
 }
 
 get_gitdirs() {
