@@ -19,6 +19,7 @@ main() {
   # TODO typos
   # TODO old-compiled typst/latex files
   # TODO hanging swap files
+  # TODO keep the desktop clear
 }
 
 get_gitdirs() {
