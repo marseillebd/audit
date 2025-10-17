@@ -11,6 +11,7 @@ PUBLISHED=( nanopass gateway-page typst-fitch )
 declare -a GITDIRS
 
 main() {
+  clean_desktop
   get_gitdirs
   projects_have_git
   git_right_place
@@ -19,7 +20,17 @@ main() {
   # TODO typos
   # TODO old-compiled typst/latex files
   # TODO hanging swap files
-  # TODO keep the desktop clear
+}
+
+clean_desktop() {
+  if [[ -d "$HOME/Desktop" ]]; then
+    nfiles=$(ls "$HOME/Desktop" | wc -l)
+    if [[ $nfiles -eq 1 ]]; then
+      echo "[ERROR]: $nfiles file on desktop"
+    elif [[ $nfiles -gt 1 ]]; then
+      echo "[ERROR]: $nfiles files on desktop"
+    fi
+  fi
 }
 
 get_gitdirs() {
