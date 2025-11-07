@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # array holding all directories where projects should be located
-PROJDIRS=( "$HOME/Documents/programming" "$HOME/Documents/sysadmin" )
+PROJDIRS=( "$HOME/Documents/programming" "$HOME/Documents/presentations" "$HOME/Documents/sysadmin" )
 
 PUBLISHED=( nanopass gateway-page typst-fitch )
 # TODO upcomping: hss, kiss-tools, compiler-tools
